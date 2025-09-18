@@ -77,7 +77,7 @@ if __name__ == "__main__":
         saddle_function,
         x_range=(-10, 10),
         y_range=(-10, 10),
-        title="马鞍面: z = x²/10 - y²/10"
+        title="马鞍面: z = x²/10 - y²/10+x"
     )
 
     # 绘制sinc函数

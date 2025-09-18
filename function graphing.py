@@ -80,7 +80,7 @@ if __name__ == "__main__":
         x_range=(-10, 10),
         y_range=(-10, 10),
         # title="马鞍面: z = x²/10 - y²/10+x"
-        title="马鞍面: x^2-y^2=0"
+        title="马鞍面: x^2- y^2=-1"
     )
     plot_3d_function(
         test1_function,

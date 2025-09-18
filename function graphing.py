@@ -70,6 +70,8 @@ def sinc_function(x, y):
 def gaussian_function(x, y):
     return np.exp(-(x ** 2 + y ** 2) / 10)
 
+def test1_function(x,y):
+    return np.exp(x**2-y**2+x*y)
 
 if __name__ == "__main__":
     # 绘制马鞍面
@@ -77,23 +79,30 @@ if __name__ == "__main__":
         saddle_function,
         x_range=(-10, 10),
         y_range=(-10, 10),
-        title="马鞍面: z = x²/10 - y²/10+x"
+        # title="马鞍面: z = x²/10 - y²/10+x"
+        title="马鞍面: x^2-y^2=0"
     )
-
-    # 绘制sinc函数
     plot_3d_function(
-        sinc_function,
+        test1_function,
         x_range=(-10, 10),
         y_range=(-10, 10),
-        title="Sinc函数: z = sin(√(x²+y²))/√(x²+y²)",
-        colormap=cm.viridis
+        # title="马鞍面: z = x²/10 - y²/10+x"
+        title="wu"
     )
-
-    # 绘制高斯函数
-    plot_3d_function(
-        gaussian_function,
-        x_range=(-5, 5),
-        y_range=(-5, 5),
-        title="高斯函数: z = e^(-(x²+y²)/10)",
-        colormap=cm.plasma
-    )
+    # # 绘制sinc函数
+    # plot_3d_function(
+    #     sinc_function,
+    #     x_range=(-10, 10),
+    #     y_range=(-10, 10),
+    #     title="Sinc函数: z = sin(√(x²+y²))/√(x²+y²)",
+    #     colormap=cm.viridis
+    # )
+    #
+    # # 绘制高斯函数
+    # plot_3d_function(
+    #     gaussian_function,
+    #     x_range=(-5, 5),
+    #     y_range=(-5, 5),
+    #     title="高斯函数: z = e^(-(x²+y²)/10)",
+    #     colormap=cm.plasma
+    # )
